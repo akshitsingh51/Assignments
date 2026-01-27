@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Waldenburg';
+    src: url('fonts/waldenburg.woff2') format('woff2'), /* Modern standard */
+         url('fonts/waldenburg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Best practice: shows text while font loads */
+}
+:root {
+    --font-waldenburg: 'Waldenburg', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-waldenburg), "Waldenburg", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+}
+
+#right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#ffffff;
+}
+
+#left{
+    color: white;
+    flex: 1;
+    min-height: 100vh;
+    background-color: rgb(28, 27, 27);
+}
+
+#leftContent{
+    padding: 32px;
+}
+
+.metaData{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px;
+
+}
+
+img{
+    padding-right: 20px;
+}
+
+.inputBox{
+    width: 300px;
+    padding:10px;
+    margin: 10px 2px;
+    border: 1px rgb(117, 114, 114) solid;
+    border-radius: 10px;
+}
+
+.decoration1{
+    border-radius: 30px;
+    height: 3.5px;
+    width: 60px;
+    background-color: black;
+}
+
+.decoration{
+    border-radius: 30px;
+    height: 3.5px;
+    width: 60px;
+    background-color: #949494;;
+}
+
+.star{
+    color: #949494;
+}
